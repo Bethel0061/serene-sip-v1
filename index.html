@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serene Sip</title>
+    <link
+      rel="shortcut icon"
+      href="images/cute-chef-girl-uniform-showing-thumbs-up-sign-holding-empty-plate-restaurant-mascot-character-logo-pink-background-3d-illustration-cartoon_56104-1615.jpg"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: bisque;
+      }
+      header {
+        
+        width: 100%;
+        text-align: center;
+        padding: 20px ;
+      }
+      header h1,
+      #our-menu h2,
+      #contact-us h2 {
+        text-transform: uppercase;
+        font-family: "Playfair Display SC", serif;
+        color: #49281a;
+        padding: 20px 0;
+      }
+      header p {
+        font-family: lato;
+        padding: 10px 0;
+      }
+      .btn-div {
+        background-color: #49281a;
+        display: block;
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 8px;
+        margin: 10px auto;
+      }
+      nav {
+        padding: 20px;
+        text-align: center;
+      }
+      nav a {
+        padding: 0 20px;
+        text-decoration: none;
+        color: #49281a;
+        font-family: lato;
+      }
+      #our-menu {
+        background-color: #ffc;
+      }
+      #our-menu .menu {
+        font-family: lato;
+        padding: 10px;
+      }
+      #about-us p,
+      #contact-us p {
+        padding: 10px;
+        text-align: justify;
+        line-height: 1.5;
+        font-family: lato;
+      }
+      .card {
+        width: 250px;
+        border: 1px solid #000;
+        text-align: center;
+        /* background-color: bisque; */
+        margin: 50px;
+        padding: 10px;
+        font-family: sans-serif;
+        border-radius: 5px;
+      }
+      .card-img-top {
+        width: 130px;
+      }
+      .card-titl,
+      .card-text {
+        padding: 10px 0;
+      }
+      .font-italic {
+        font-style: italic;
+      }
+      .btn {
+        background-color: #000;
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+        color: aliceblue;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      form {
+        /* border: 1px solid black; */
+        width: 400px;
+        padding: 10px;
+        /* margin-bottom: 100px; */
+        font-family: lato;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+      }
+      form div {
+        /* background-color: #f0e2c5; */
+        padding: 10px 0;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      #message textarea {
+        width: 250px;
+        padding: 10px 0;
+        border-radius: 8px;
+        border: 1px solid black;
+        outline: none;
+      }
+
+      #message {
+        display: flex;
+        align-items: top;
+      }
+      footer{
+        border-top: 1px solid black;
+        padding: 50px 0;
+        margin-top: 30px;
+        text-align: center;
+        font-family: lato;
+      }
+       
+    </style>
+  </head>
+  <body>
+    <!-- header section  -->'
+    <header>
+      <h1>welcom to serene sip</h1>
+      <p>Indulge in the finest coffee experience crafted just for you.</p>
+      <a href="#" class="btn-div"> Explore Our Menu</a>
+    </header>
+
+    <!-- nav section  -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- our menu section  -->
+    <section id="our-menu">
+      <h2>Our Menu</h2>
+      <!-- for coffee -->
+      <div class="menu">
+        <h3>Coffee Selections</h3>
+        <div class="card">
+          <img class="card-img-top" src="images/cafe 5.jpg" alt="coffee" />
+          <h3 class="card-title">Cuppuccino</h3>
+          <p class="card-text font-italic">$14.20</p>
+          <p class="card-text">
+            Evens Out skintone and Pimple Mark Reductions.
+          </p>
+          <a href="#" class="btn">More</a>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="images/cafe1.jpg" alt="coffee" />
+          <h3 class="card-title">Doppio</h3>
+          <p class="card-text font-italic">$16.50</p>
+          <p class="card-text">
+            A doppio espresso aka a standard double is 2 ounces.
+          </p>
+          <a href="#" class="btn">More</a>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="images/cafe3.jpg" alt="coffee" />
+          <h3 class="card-title">Blended Coffee Frappe</h3>
+          <p class="card-text font-italic">$16.40</p>
+          <p class="card-text">
+            A creamy,chilled coffee drink with a touch of caramel.
+          </p>
+          <a href="#" class="btn">More</a>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/Irish coffee.jpg"
+            alt="coffee"
+          />
+          <h3 class="card-title">Irish Coffee</h3>
+          <p class="card-text font-italic">$15.20</p>
+          <p class="card-text">Boost your mood and activate your brain.</p>
+          <a href="#" class="btn">More</a>
+        </div>
+      </div>
+      <!-- for snack -->
+      <div class="menu">
+        <h3>Delicious Snacks</h3>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/carrot-cake_74190-2550.jpg"
+            alt="cake"
+          />
+          <h3 class="card-title">Carrot Cake</h3>
+          <p class="card-text font-italic">$15.20</p>
+          <p class="card-text">Our super soft and extra lush Carrot Cake.</p>
+          <a href="#" class="btn">More</a>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/chocolate-cake_1203-3500.jpg"
+            alt="chococake"
+          />
+          <h3 class="card-title">Chocolate Cake</h3>
+          <p class="card-text font-italic">$16.20</p>
+          <p class="card-text">
+            Our sweet,fruity,caramel,earthy and nutty Chocolate Cake.
+          </p>
+          <a href="#" class="btn">More</a>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/red-velvet-cakes-isolated_1203-6842.jpg"
+            alt="cake"
+          />
+          <h3 class="card-title">Red velvet Cake</h3>
+          <p class="card-text font-italic">$17.60</p>
+          <p class="card-text">
+            Our very mild cocoa with a slightly tart edge Red Velvet.
+          </p>
+          <a href="#" class="btn">More</a>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="images/chocolate-ice-cream-cake_1339-1731.jpg"
+            alt="cake"
+          />
+          <h3 class="card-title">Chocolate Ice-cream Cake</h3>
+          <p class="card-text font-italic">$17.60</p>
+          <p class="card-text">
+            Try our home-made chocolate fudge with bits of melted toffee and
+            ooey gooey caramel.
+          </p>
+          <a href="#" class="btn">More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us section  -->
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>welcom to serene sip cafe</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quo
+        facere consequatur tenetur rem architecto saepe quibusdam.
+        Exercitationem doloremque culpa molestiae iste voluptas, nobis laborum
+        maiores itaque eius illum voluptatibus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quo
+        facere consequatur tenetur rem architecto saepe quibusdam.
+        Exercitationem doloremque culpa molestiae iste voluptas, nobis laborum
+        maiores itaque eius illum voluptatibus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quo
+        facere consequatur tenetur rem architecto saepe quibusdam.
+        Exercitationem doloremque culpa molestiae iste voluptas, nobis laborum
+        maiores itaque eius illum voluptatibus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quo
+        facere consequatur tenetur rem architecto saepe quibusdam.
+        Exercitationem doloremque culpa molestiae iste voluptas, nobis laborum
+        maiores itaque eius illum voluptatibus!
+      </p>
+    </section>
+
+    <!-- contact section  -->
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <p>
+        We'd live to hear from you! Reach out to us with any questions,
+        feedback, or special requests.
+      </p>
+      <form action="">
+        <div>
+          <label for="">Your Name</label>
+          <input type="text" name="" id="" />
+        </div>
+        <div>
+          <label for="">Your Email</label>
+          <input type="email" name="" id="" />
+        </div>
+        <div id="message">
+          <label for="">Your Message</label>
+          <textarea name="" id=""></textarea>
+        </div>
+        <input class="btn-div" type="submit" value="send message" />
+      </form>
+    </section>
+
+    <!-- footer section  -->
+     <footer>
+      <p>
+        copyright &copy;2024. All right reserved.
+      </p>
+     </footer>
+
+  </body>
+</html>
