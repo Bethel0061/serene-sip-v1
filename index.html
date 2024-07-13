@@ -9,6 +9,13 @@
       href="images/cute-chef-girl-uniform-showing-thumbs-up-sign-holding-empty-plate-restaurant-mascot-character-logo-pink-background-3d-illustration-cartoon_56104-1615.jpg"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
@@ -17,14 +24,21 @@
         margin: 0;
         box-sizing: border-box;
       }
-      body{
-        background-color: bisque;
+      body {
+        background-color: #f5ece4;
+        /* width: 100px; */
+
+        header {
+          width: 100%;
+          text-align: center;
+          padding: 20px;
+        }
       }
-      header {
-        
-        width: 100%;
-        text-align: center;
-        padding: 20px ;
+      .bg-img {
+        background-image: url(images/coffee-mugs-blue-textured-wallpaper_53876-167252.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
       header h1,
       #our-menu h2,
@@ -60,11 +74,16 @@
         font-family: lato;
       }
       #our-menu {
-        background-color: #ffc;
+        background-color: #ffe3d7;
       }
       #our-menu .menu {
         font-family: lato;
         padding: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      #about-us {
+        border-bottom: 1px solid black;
       }
       #about-us p,
       #contact-us p {
@@ -135,31 +154,44 @@
         display: flex;
         align-items: top;
       }
-      footer{
+      .up-arrow {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 16px;
+        margin-right: 50px;
+
+        margin-top: -50px;
+        float: right;
+      }
+      footer {
         border-top: 1px solid black;
         padding: 50px 0;
         margin-top: 30px;
         text-align: center;
         font-family: lato;
       }
-       
     </style>
   </head>
   <body>
-    <!-- header section  -->'
-    <header>
-      <h1>welcom to serene sip</h1>
-      <p>Indulge in the finest coffee experience crafted just for you.</p>
-      <a href="#" class="btn-div"> Explore Our Menu</a>
-    </header>
+    <!-- header section  -->
+    <div class="bg-img">
+      <header>
+        <h1>welcom to serene sip</h1>
+        <p>Indulge in the finest coffee experience crafted just for you.</p>
+        <a href="#" class="btn-div"> Explore Our Menu</a>
+      </header>
 
-    <!-- nav section  -->
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Menu</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
-    </nav>
+      <!-- nav section  -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
 
     <!-- our menu section  -->
     <section id="our-menu">
@@ -205,7 +237,9 @@
           />
           <h3 class="card-title">Irish Coffee</h3>
           <p class="card-text font-italic">$15.20</p>
-          <p class="card-text">Boost your mood and activate your brain.</p>
+          <p class="card-text">
+            Boost your mood,relaxing and activate your brain.
+          </p>
           <a href="#" class="btn">More</a>
         </div>
       </div>
@@ -220,7 +254,10 @@
           />
           <h3 class="card-title">Carrot Cake</h3>
           <p class="card-text font-italic">$15.20</p>
-          <p class="card-text">Our super soft and extra lush Carrot Cake.</p>
+          <p class="card-text">
+            Our super soft, sweetness,cream cheese frosting and extra lush
+            Carrot Cake.
+          </p>
           <a href="#" class="btn">More</a>
         </div>
         <div class="card">
@@ -232,7 +269,8 @@
           <h3 class="card-title">Chocolate Cake</h3>
           <p class="card-text font-italic">$16.20</p>
           <p class="card-text">
-            Our sweet,fruity,caramel,earthy and nutty Chocolate Cake.
+            Our sweet,dominant flavor fruity,caramel,earthy and nutty Chocolate
+            Cake.
           </p>
           <a href="#" class="btn">More</a>
         </div>
@@ -245,7 +283,8 @@
           <h3 class="card-title">Red velvet Cake</h3>
           <p class="card-text font-italic">$17.60</p>
           <p class="card-text">
-            Our very mild cocoa with a slightly tart edge Red Velvet.
+            Our very mild cocoa with a slightly tart edge tender, moist delicate
+            unique texture Red Velvet.
           </p>
           <a href="#" class="btn">More</a>
         </div>
@@ -258,8 +297,8 @@
           <h3 class="card-title">Chocolate Ice-cream Cake</h3>
           <p class="card-text font-italic">$17.60</p>
           <p class="card-text">
-            Try our home-made chocolate fudge with bits of melted toffee and
-            ooey gooey caramel.
+            Try our home-made chocolate fudge with bits of melted toffee.
+          
           </p>
           <a href="#" class="btn">More</a>
         </div>
@@ -316,16 +355,18 @@
           <label for="">Your Message</label>
           <textarea name="" id=""></textarea>
         </div>
-        <input class="btn-div" type="submit" value="send message" />
+        <input class="btn-div" type="submit" value="Send Message" />
       </form>
+      <div class="up-arrow">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
     </section>
 
     <!-- footer section  -->
-     <footer>
-      <p>
-        copyright &copy;2024. All right reserved.
-      </p>
-     </footer>
-
+    <div>
+      <footer>
+        <p>copyright &copy;2024. All right reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
